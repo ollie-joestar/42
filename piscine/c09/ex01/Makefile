@@ -1,3 +1,14 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ollie <oohnivch@student.42.fr>             +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/02/19 11:36:24 by ollie             #+#    #+#              #
+#    Updated: 2024/02/20 21:34:09 by ollie            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -I./includes
@@ -7,7 +18,6 @@ SRC = $(shell find srcs -type f -name "*.c")
 OBJ = $(SRC:srcs/%.c=srcs/%.o)
 
 LIB = libft.a
-LIBDIR = lib
 
 all: $(LIB)
 

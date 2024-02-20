@@ -6,7 +6,7 @@
 /*   By: oohnivch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 18:10:40 by oohnivch          #+#    #+#             */
-/*   Updated: 2024/02/16 18:46:04 by ollie            ###   ########.fr       */
+/*   Updated: 2024/02/19 15:16:21 by ollie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	check_sep(char c, char *charset)
 	int	i;
 
 	i = 0;
+	int b = sizeof(char);
 	while (charset[i])
 	{
 		if (c == charset[i])
