@@ -6,7 +6,7 @@
 /*   By: oohnivch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 10:25:37 by oohnivch          #+#    #+#             */
-/*   Updated: 2024/02/18 12:11:45 by ollie            ###   ########.fr       */
+/*   Updated: 2024/02/22 14:56:27 by ollie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,9 @@ void	ft_putstr(char *str)
 	while (*str)
 		write(1, str++, 1);
 }
+/*
+int	main(int argc, char **argv)
+{
+	ft_putstr(argv[0]);
+	return (0);
+}*/
