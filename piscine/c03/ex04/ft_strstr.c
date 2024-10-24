@@ -6,7 +6,7 @@
 /*   By: oohnivch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 15:52:28 by oohnivch          #+#    #+#             */
-/*   Updated: 2024/02/18 19:17:33 by ollie            ###   ########.fr       */
+/*   Updated: 2024/02/24 13:11:09 by ollie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strstr(char *str, char *to_find)
 		{
 			if (!(to_find[j + 1]))
 			{
-				return (&str[i]);
+				return (str + i);
 			}
 			j++;
 		}

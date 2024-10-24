@@ -6,7 +6,7 @@
 /*   By: oohnivch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 15:49:08 by oohnivch          #+#    #+#             */
-/*   Updated: 2024/02/18 20:34:50 by ollie            ###   ########.fr       */
+/*   Updated: 2024/02/24 14:12:09 by ollie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,10 @@ char	*ft_strdup(char *src)
 	if (ptr == NULL)
 		return (NULL);
 	while (src[i])
-		ptr[i] = src[i++];
+	{
+		ptr[i] = src[i];
+		i++;
+	}
 	ptr[i] = '\0';
 	return (ptr);
 }
